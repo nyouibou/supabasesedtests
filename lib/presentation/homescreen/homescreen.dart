@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import '../detailedproductscreen.dart';
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -39,6 +41,13 @@ class _HomePageState extends State<HomePage> {
                 subtitle: Text('\$${product['price']}'),
                 onTap: () {
                   // Navigate to Product Details
+                   // Navigate to Product Details Page
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => DetailedProductPage(product: product),
+                    ),
+                  );
                 },
               );
             },
