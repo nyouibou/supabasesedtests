@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../detailedproductscreen.dart';
+import 'profilescreen.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -53,7 +54,13 @@ class _HomePageState extends State<HomePage> {
             },
           );
         },
-      ),
+      ),floatingActionButton: FloatingActionButton(onPressed: () {
+        Navigator.push(
+  context,
+  MaterialPageRoute(builder: (context) => ProfilePage()),
+);
+
+      },),
     );
   }
 }

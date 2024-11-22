@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:supabasesedtest/presentation/loginscreen/loginpage.dart';
+import 'package:supabasesedtest/presentation/loginscreen/signupscreen.dart';
 
 import 'presentation/homescreen/homescreen.dart';
-import 'presentation/loginscreen/loginpage.dart';
 import 'supabaseconfig.dart';
 
 void main() async {
